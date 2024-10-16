@@ -10,3 +10,5 @@
 8. set up vercel json
 9. add requirements.txt
 10. run script
+
+#Live URL : https://email-splitter-flask.vercel.app/
