@@ -13,7 +13,7 @@ body {
     font-family: Arial, sans-serif;
     /* Optional: Set a font family */
    /*background-color: #c9c9c98d; */
-    background-image: url("https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat center center/cover;
+    background: url("https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat center center/cover;
 
 }
 
