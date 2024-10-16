@@ -1,0 +1,100 @@
+body {
+    display: flex;
+    flex-direction: column;
+    /* Align children vertically */
+    align-items: center;
+    /* Center horizontally */
+    justify-content: center;
+    /* Center vertically */
+    height: 100vh;
+    /* Full viewport height */
+    margin: 0;
+    /* Remove default margin */
+    font-family: Arial, sans-serif;
+    /* Optional: Set a font family */
+    background-color: #c9c9c98d;
+}
+
+.container,
+#emailDetails {
+    background-color: bisque;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px #000;
+    width: 500px;
+    text-align: center;
+}
+
+input[type="text"] {
+    height: 40px;
+    border: none;
+    margin: 20px auto;
+    width: 80%;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input[type="submit"],
+button {
+
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 15px;
+}
+
+input[type="submit"] {
+    background-color: green;
+}
+
+button {
+    background-color: crimson;
+
+}
+
+
+form {
+    text-align: center;
+    /* Center text in the form */
+    margin-bottom: 20px;
+    /* Space below the form */
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+h1 {
+    margin-bottom: 20px;
+    /* Space below the heading */
+}
+
+#emailDetails {
+    margin-top: 20px;
+    background-color: #fff;
+
+}
+
+#emailDetails p {
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+
+.error-message {
+    color: red;
+    /* Style for error message */
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}

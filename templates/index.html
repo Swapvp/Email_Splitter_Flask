@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Splitter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Email Splitter Web App</h1>
+
+        <!-- Form to take email input -->
+        <form id="emailForm" method="POST">
+            <label for="email">Enter your email:</label>
+            <input type="text" id="email" name="email" required>
+            <div>
+                <input type="submit" id="submitBtn" value="Submit" />
+                <button type="button" onclick="clearInput()">Clear</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="errorMessage" class="hide">
+        <p class="error-message">{{ error_message }}</p>
+    </div>
+
+    {% if username and domain %}
+    <div id="emailDetails" class="show">
+        <h2>Email Details</h2>
+        <p>Hello, your username is "{{ username }}" & domain is "{{ domain }}".</p>
+    </div>
+    {% else %}
+    <div id="emailDetails" class="hide">
+        <h2>Email Details</h2>
+        <p>Your email details will appear here.</p>
+    </div>
+    {% endif %}
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+</html>
